@@ -22,14 +22,14 @@
             margin: auto;
             height: 30rem;
             width: 60%; 
-            background-color: #b8b8ff;
+            background-color: #ce62e9;
             border-radius: 1rem;
             padding-block: 2rem;
         }
 
         h1 {
             text-align: center; 
-            color: #4a34c8; 
+            color: #d67474; 
             padding-block: 2rem;
             font-size: 2.5rem;
         }
@@ -92,6 +92,54 @@
     </style>
 </head>
 <body>
-    
+    <form action="action.php">
+        <!-- Text field-->
+         <div>
+            <label for="text" class="grid-label"></label> 
+            <input type="text" name="Username" placeholder="Add Your Name">
+         </div>
+        
+         <!-- email field-->
+         <div> 
+            <label for="text" class="grid-label"></label>
+            <input type="email" name="email" placeholder="Add Your Email">
+         </div>
+          <!-- Password-->
+           <div>
+            <label for="text" class="grid-label"></label>
+            <input type="password" name="password" id="" placeholder="Add Your Password">
+           <input type="number" name="Cellphone number" id="">
+           <input type="hidden" value="F0rd@FN" name="security_key">
+
+           <textarea name="Address" id="" rows="5"></textarea>
+           <input type="submit" value="Click Submit">
+           </div>
+    </form>
+</body>
+<body>
+    <main>
+        <form action="action.php"> 
+            <input type="radio" name="skill" id="" value="web">
+            <label for="skill" >web</label>
+            <input type="file" name="file upload" id="" accept=" .jpg,.png,.gif">
+            <!-- Submit -->
+             <input type="submit" value="click submit">
+             
+             <input type="reset" value="reset">
+        </form>
+    </main>
+</body>
+<body>
+    <main>
+        <form action="action.php">
+            <div class="flex-field">
+            </div>
+            <input type="radio" name="skill" id="" value="programing"><label for="skills">Java</label>
+            <input type="radio" name="skill" id="" value="web">
+            <label for="skills">web</label>
+            <input type="file" name="file upload" id="" accept=" .jpg,.png,.gif">
+            <select name="your-level"></select>
+        </form>
+    </main>
 </body>
 </html> 
